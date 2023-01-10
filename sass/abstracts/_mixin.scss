@@ -1,0 +1,17 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+}
+
+
+@mixin mode($color) {
+    @if $color == black {
+        background-color: black;
+        color: #fff;
+    }
+    @else{
+        background-color: #fff;
+        color: black;
+    }
+    
+}

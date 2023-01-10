@@ -1,0 +1,54 @@
+/*
+*************************** CORE STYLE ***************************
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // @include mode(#fff)
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+ 
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-color: rgb(21, 53, 156);
+  background: url(/images/space-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
