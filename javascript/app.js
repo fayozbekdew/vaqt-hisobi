@@ -23,6 +23,7 @@ let container = document.querySelector(".hero__container")
 let closeBtn = document.querySelector(".btnclose")
 const dob = prompt("Tugilgan yilingizni kiriting");
 let ism = prompt("Ismingizni kiriting");
+ism = (ism.toUpperCase())
 let yosh = (`2023` - dob);
 let oy = ( yosh * 12 );
 let hafta = ( oy * 4 );
@@ -32,7 +33,7 @@ let daqiqa = ( soat * 60 );
 let soniya = ( daqiqa * 60);
 
 
-let natija = `Qadirli ${ism} siz ${ yosh } yil, ${ oy } oy, ${ hafta } hafta, ${ kun } kun, ${ soat }, ${ daqiqa}daqiqa, ${ soniya} soniya yashadingiz !`
+let natija = `Qadirli ${ism} siz ${ yosh } yil, ${ oy } oy, ${ hafta } hafta, ${ kun } kun, ${ soat } soat, ${ daqiqa} daqiqa, ${ soniya} soniya yashadingiz !`
 
 headingBtn.addEventListener("click", ()=> {
     container.style.display = "block"

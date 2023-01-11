@@ -33,17 +33,26 @@
     background: transparent;
     // animation: rotate 1s linear infinite;
     &:hover{
-        animation: rotate 0.3s linear 1;
+        animation: rotate 0.3s linear 2;
     }
 }
 
 
 @keyframes rotate {
     0%{
-        transform: rotate(25deg);
+        transform: rotate(10deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(50deg);
+    }
+    75%{
+        transform: rotate(70deg);
     }
     
     100%{
-        transform: rotate(70deg);
+        transform: rotate(100deg);
     }
 }
